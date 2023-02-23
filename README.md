@@ -5,6 +5,7 @@
 - créer un fichier .env à partir de .env.example dans le répertoire racine du projet
 - tester sur localhost/ciedesguides_laravel/public/(index.php)
 - Générer un Laravel Project ID Key sur le bouton Generate Projet Id Key
+&nbsp;
 **Et voilàà ;)**
 
 
