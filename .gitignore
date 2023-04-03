@@ -17,4 +17,5 @@ yarn-error.log
 /.idea
 /.vscode
 
-/config/database.php
+config/database.php
+.code-workspace
