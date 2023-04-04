@@ -6,9 +6,9 @@ use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Support\Facades\Auth;
 
-use App\Models\Abri;
+use App\Models\Vallee;
 
-class AbriPolicy {
+class ValleePolicy {
     use HandlesAuthorization;
 
     /**
@@ -29,7 +29,7 @@ class AbriPolicy {
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Abri $abri) {
+    public function view(User $user, Vallee $vallee) {
         return true;
     }
 
@@ -51,7 +51,7 @@ class AbriPolicy {
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Abri $abri) {
+    public function update(User $user, Vallee $vallee) {
         return true;
     }
 
@@ -62,7 +62,7 @@ class AbriPolicy {
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Abri $abri) {
+    public function delete(User $user, Vallee $vallee) {
         return true;
     }
 
@@ -73,7 +73,7 @@ class AbriPolicy {
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Abri $abri) {
+    public function restore(User $user, Vallee $vallee) {
         return true;
     }
 
@@ -84,7 +84,7 @@ class AbriPolicy {
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Abri $abri) {
+    public function forceDelete(User $user, Vallee $vallee) {
         return true;
     }
 }

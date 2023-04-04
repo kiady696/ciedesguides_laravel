@@ -22,5 +22,5 @@
         </div>
     @endif
 
-    @yield('abris.content')
+    @yield('vallees.content')
 @endsection

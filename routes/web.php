@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['customAuth'])->group(function () {
-    Route::resource('abris', App\Http\Controllers\AbriController::class, []);
-    
+    Route::resource('vallees', App\Http\Controllers\ValleeController::class, []);
+    // Route::resource('abris', App\Http\Controllers\AbriController::class, []);
 });
 
