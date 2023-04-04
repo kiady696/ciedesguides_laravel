@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AbrisController extends Controller
+class AscensionsController extends Controller
 {
     /**
      * Display a listing of the resource.

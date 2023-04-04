@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AbrisController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/a', function () {
-    return view('abris');
-});
+Route::resources([
+    'abris', AbrisController::class,
+    'guides', GuidesController::class,
+    'sommets', SommetsController::class,
+    'vallees', ValleesController::class,
+    'ascensions', AscensionsController::class,
+    'randonnees', RandonneesController::class,
+]);
 
