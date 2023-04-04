@@ -18,12 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resources([
-    'abris', AbrisController::class,
-    'guides', GuidesController::class,
-    'sommets', SommetsController::class,
-    'vallees', ValleesController::class,
-    'ascensions', AscensionsController::class,
-    'randonnees', RandonneesController::class,
-]);
+
 
