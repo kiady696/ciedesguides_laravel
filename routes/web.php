@@ -18,5 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::middleware(['customAuth'])->group(function () {
+    Route::resource('abris', App\Http\Controllers\AbriController::class, []);
+    
+});
 
