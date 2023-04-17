@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::middleware(['customAuth'])->group(function () {
     Route::resource('vallees', App\Http\Controllers\ValleeController::class, []);
-    // Route::resource('abris', App\Http\Controllers\AbriController::class, []);
+    Route::resource('vallees/{vallee}/abris', App\Http\Controllers\ValleeAbriController::class, ["as" => "vallees",]);
+    Route::resource('guides', App\Http\Controllers\GuideController::class, []);
 });
 
