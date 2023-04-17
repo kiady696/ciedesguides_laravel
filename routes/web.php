@@ -22,5 +22,6 @@ Route::middleware(['customAuth'])->group(function () {
     Route::resource('vallees', App\Http\Controllers\ValleeController::class, []);
     Route::resource('vallees/{vallee}/abris', App\Http\Controllers\ValleeAbriController::class, ["as" => "vallees",]);
     Route::resource('guides', App\Http\Controllers\GuideController::class, []);
+    Route::resource('sommets', App\Http\Controllers\SommetController::class, []);
 });
 
